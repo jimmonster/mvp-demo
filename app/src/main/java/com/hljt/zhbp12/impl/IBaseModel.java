@@ -1,7 +1,8 @@
 package com.hljt.zhbp12.impl;
 
+import com.lzy.okgo.model.Response;
+
 import java.io.Serializable;
-import java.util.HashMap;
 
 /**
  * @author : Jim
@@ -9,9 +10,10 @@ import java.util.HashMap;
  * @description :
  */
 public interface IBaseModel extends Serializable {
-
-    void GET(String url, HashMap params);
-    void POST(String url, HashMap params);
-
+    /**
+     * 成功获取到数据
+     * @param response
+     */
+    void onSuccessful(Response<String> response);
 
 }

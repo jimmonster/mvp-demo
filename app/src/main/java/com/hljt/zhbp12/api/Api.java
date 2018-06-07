@@ -1,5 +1,6 @@
 package com.hljt.zhbp12.api;
 
+import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
 
@@ -10,7 +11,7 @@ import com.lzy.okgo.OkGo;
  * @date : 2018/6/7
  * @description :
  */
-public  class Api extends android.app.Application{
+public  class Api extends Application {
 
     public static Context mContext;
 
